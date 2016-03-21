@@ -59,13 +59,26 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Ol-tO-SYc">
+                                <rect key="frame" x="155" y="104" width="290" height="98"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="M1I-UB-U7k">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="1rt-vw-qe3">
+                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bqh-SK-1h3" secondAttribute="trailing" id="9c5-f3-Vdj"/>
                             <constraint firstAttribute="trailing" secondItem="Fnu-vx-8UT" secondAttribute="trailing" id="9ql-21-8o8"/>
+                            <constraint firstItem="5Ol-tO-SYc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FgN-UR-cak"/>
                             <constraint firstItem="Fnu-vx-8UT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GKb-f7-9A9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bqh-SK-1h3" secondAttribute="bottom" id="Kkr-CS-5nN"/>
+                            <constraint firstItem="5Ol-tO-SYc" firstAttribute="top" secondItem="A8t-xg-Plj" secondAttribute="bottom" constant="16" id="Nsq-LO-FLN"/>
                             <constraint firstItem="bqh-SK-1h3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P8D-OT-UV0"/>
                             <constraint firstItem="PAo-nr-wPo" firstAttribute="centerY" secondItem="A8t-xg-Plj" secondAttribute="centerY" id="QBl-HM-N9s"/>
                             <constraint firstItem="A8t-xg-Plj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xd6-6t-FS2"/>
@@ -83,7 +96,9 @@
     </scenes>
     <resources>
         <image name="bg" width="768" height="1024"/>
+        <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>
+        <image name="heart" width="95" height="98"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="skull" width="95" height="98"/>
     </resources>
