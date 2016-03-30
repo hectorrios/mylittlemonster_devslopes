@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -70,6 +71,13 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-Gq-DK1">
+                                <rect key="frame" x="-30" y="179" width="548" height="376"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="376" id="GXF-0e-LRe"/>
+                                    <constraint firstAttribute="width" constant="548" id="zuz-XZ-jwp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -81,13 +89,18 @@
                             <constraint firstItem="5Ol-tO-SYc" firstAttribute="top" secondItem="A8t-xg-Plj" secondAttribute="bottom" constant="16" id="Nsq-LO-FLN"/>
                             <constraint firstItem="bqh-SK-1h3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P8D-OT-UV0"/>
                             <constraint firstItem="PAo-nr-wPo" firstAttribute="centerY" secondItem="A8t-xg-Plj" secondAttribute="centerY" id="QBl-HM-N9s"/>
+                            <constraint firstItem="cNy-Gq-DK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-50" id="SrQ-Tm-YE8"/>
                             <constraint firstItem="A8t-xg-Plj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xd6-6t-FS2"/>
                             <constraint firstItem="A8t-xg-Plj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dCP-4Q-icc"/>
                             <constraint firstItem="PAo-nr-wPo" firstAttribute="centerX" secondItem="A8t-xg-Plj" secondAttribute="centerX" id="deU-UO-8SJ"/>
                             <constraint firstItem="bqh-SK-1h3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nHr-3b-wCW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fnu-vx-8UT" secondAttribute="bottom" id="qek-YW-dST"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cNy-Gq-DK1" secondAttribute="bottom" constant="45" id="yjS-St-bnj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="monsterImg" destination="cNy-Gq-DK1" id="6RG-iv-03g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,6 +112,7 @@
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
+        <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="skull" width="95" height="98"/>
     </resources>
