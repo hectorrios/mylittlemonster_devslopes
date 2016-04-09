@@ -11,12 +11,18 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var monsterImg : UIImageView!
+    @IBOutlet weak var foodImg : DragImg!
+    @IBOutlet weak var heartImg : DragImg!
+    
+    let IMAGE_NUMBER = 4
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var imageArray = [UIImage]()
-        for var i=1; i <= 4; i++ {
+    
+        for i in 1...IMAGE_NUMBER {
+            print(i)
             imageArray.append(UIImage(named: "idle\(i).png")!)
         }
         
@@ -25,6 +31,8 @@ class ViewController: UIViewController {
         monsterImg.animationRepeatCount = 0 //runs inifinitely
         monsterImg.startAnimating()
     }
+    
+    
 
 }
 
