@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -60,7 +60,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-Gq-DK1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-Gq-DK1" customClass="MonsterImg" customModule="mylittlemonster" customModuleProvider="target">
                                 <rect key="frame" x="-30" y="179" width="548" height="376"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="376" id="GXF-0e-LRe"/>
@@ -143,6 +143,9 @@
                         <outlet property="foodImg" destination="1rt-vw-qe3" id="CTD-XR-f2Q"/>
                         <outlet property="heartImg" destination="M1I-UB-U7k" id="HmV-Jz-fvJ"/>
                         <outlet property="monsterImg" destination="cNy-Gq-DK1" id="6RG-iv-03g"/>
+                        <outlet property="penalty1Img" destination="OW0-eP-cnZ" id="3wX-FL-mSW"/>
+                        <outlet property="penalty2Img" destination="Sd7-Y5-l8h" id="Q0d-WE-H6L"/>
+                        <outlet property="penalty3Img" destination="tPd-7f-jQX" id="uvT-p2-Hgb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
